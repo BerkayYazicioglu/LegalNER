@@ -1,0 +1,2725 @@
+Using config: {'_model_dir': 'lcc_m2v_results\\model', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 120, '_session_config': allow_soft_placement: true
+graph_options {
+  rewrite_options {
+    meta_optimizer_iterations: ONE
+  }
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x0000020C6D748A20>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+Not using Distribute Coordinator.
+Running training and evaluation locally (non-distributed).
+Start train and evaluate loop. The evaluate will happen after every checkpoint. Checkpoint frequency is determined based on RunConfig arguments: save_checkpoints_steps None or save_checkpoints_secs 120.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\training\training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+Calling model_fn.
+
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:88: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:90: dropout (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dropout instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\layers\core.py:271: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\utilities.py:195: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\utilities.py:203: conv1d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv1D` instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\contrib\rnn\python\ops\lstm_ops.py:597: Layer.add_variable (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.add_weight` method instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:128: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\contrib\crf\python\ops\crf.py:567: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\ops\rnn.py:244: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:152: The name tf.metrics.accuracy is deprecated. Please use tf.compat.v1.metrics.accuracy instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\utilities.py:107: The name tf.diag_part is deprecated. Please use tf.linalg.tensor_diag_part instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:158: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:164: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:165: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
+
+Done calling model_fn.
+Create CheckpointSaverHook.
+Graph was finalized.
+Running local_init_op.
+Done running local_init_op.
+Saving checkpoints for 0 into lcc_m2v_results\model\model.ckpt.
+loss = 115.90025, step = 1
+global_step/sec: 2.86213
+loss = 17.519993, step = 101 (34.939 sec)
+global_step/sec: 3.02152
+loss = 3.5360115, step = 201 (33.096 sec)
+global_step/sec: 2.99219
+loss = 12.638861, step = 301 (33.421 sec)
+Saving checkpoints for 346 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-16T23:47:00Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-346
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-16-23:47:04
+Saving dict for global step 346: acc = 0.96308804, f1 = 0.82912064, global_step = 346, loss = 6.2177687, precision = 0.84380776, recall = 0.81493604
+Saving 'checkpoint_path' summary for global step 346: lcc_m2v_results\model\model.ckpt-346
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\summary\summary_iterator.py:68: tf_record_iterator (from tensorflow.python.lib.io.tf_record) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use eager execution and: 
+`tf.data.TFRecordDataset(path)`
+global_step/sec: 2.53595
+loss = 7.1119704, step = 401 (39.434 sec)
+global_step/sec: 3.09644
+loss = 13.901761, step = 501 (32.294 sec)
+global_step/sec: 2.78996
+loss = 8.167651, step = 601 (35.843 sec)
+Saving checkpoints for 685 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-16T23:49:00Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-685
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-16-23:49:04
+Saving dict for global step 685: acc = 0.9769151, f1 = 0.8927922, global_step = 685, loss = 3.7549026, precision = 0.90903485, recall = 0.8771199
+Saving 'checkpoint_path' summary for global step 685: lcc_m2v_results\model\model.ckpt-685
+global_step/sec: 2.56758
+loss = 6.917179, step = 701 (38.946 sec)
+global_step/sec: 3.07279
+loss = 2.44842, step = 801 (32.545 sec)
+global_step/sec: 2.95125
+loss = 7.329192, step = 901 (33.884 sec)
+global_step/sec: 3.04459
+loss = 3.5654037, step = 1001 (32.845 sec)
+Saving checkpoints for 1029 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-16T23:51:00Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-1029
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-16-23:51:04
+Saving dict for global step 1029: acc = 0.9809282, f1 = 0.91063446, global_step = 1029, loss = 2.87678, precision = 0.9117209, recall = 0.9095507
+Saving 'checkpoint_path' summary for global step 1029: lcc_m2v_results\model\model.ckpt-1029
+global_step/sec: 2.50387
+loss = 3.773124, step = 1101 (39.937 sec)
+global_step/sec: 3.26877
+loss = 6.917318, step = 1201 (30.593 sec)
+global_step/sec: 2.95163
+loss = 1.9420204, step = 1301 (33.880 sec)
+Saving checkpoints for 1384 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-16T23:53:00Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-1384
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-16-23:53:04
+Saving dict for global step 1384: acc = 0.9843452, f1 = 0.929038, global_step = 1384, loss = 2.3588285, precision = 0.9271111, recall = 0.93097293
+Saving 'checkpoint_path' summary for global step 1384: lcc_m2v_results\model\model.ckpt-1384
+global_step/sec: 2.78854
+loss = 5.1634088, step = 1401 (35.861 sec)
+global_step/sec: 2.91587
+loss = 1.5966089, step = 1501 (34.295 sec)
+global_step/sec: 3.11872
+loss = 3.449363, step = 1601 (32.066 sec)
+global_step/sec: 3.05631
+loss = 3.5813491, step = 1701 (32.719 sec)
+Saving checkpoints for 1738 into lcc_m2v_results\model\model.ckpt.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\training\saver.py:963: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-16T23:55:01Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-1738
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-16-23:55:04
+Saving dict for global step 1738: acc = 0.98569614, f1 = 0.9356325, global_step = 1738, loss = 2.1434076, precision = 0.9349376, recall = 0.9363285
+Saving 'checkpoint_path' summary for global step 1738: lcc_m2v_results\model\model.ckpt-1738
+global_step/sec: 2.75061
+loss = 1.3645306, step = 1801 (36.355 sec)
+global_step/sec: 3.06756
+loss = 0.90958595, step = 1901 (32.599 sec)
+global_step/sec: 3.14635
+loss = 0.7496964, step = 2001 (31.784 sec)
+Saving checkpoints for 2093 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-16T23:57:01Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2093
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-16-23:57:04
+Saving dict for global step 2093: acc = 0.98692787, f1 = 0.94103813, global_step = 2093, loss = 2.1068294, precision = 0.9302326, recall = 0.9520976
+Saving 'checkpoint_path' summary for global step 2093: lcc_m2v_results\model\model.ckpt-2093
+global_step/sec: 2.68371
+loss = 0.23937225, step = 2101 (37.261 sec)
+global_step/sec: 3.13252
+loss = 0.9021484, step = 2201 (31.939 sec)
+global_step/sec: 2.88975
+loss = 1.1671753, step = 2301 (34.590 sec)
+global_step/sec: 3.13879
+loss = 3.6458752, step = 2401 (31.859 sec)
+Saving checkpoints for 2446 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-16T23:59:01Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2446
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-16-23:59:05
+Saving dict for global step 2446: acc = 0.9857756, f1 = 0.936879, global_step = 2446, loss = 2.0210052, precision = 0.92047083, recall = 0.95388275
+Saving 'checkpoint_path' summary for global step 2446: lcc_m2v_results\model\model.ckpt-2446
+global_step/sec: 2.51438
+loss = 2.4787116, step = 2501 (39.770 sec)
+global_step/sec: 2.94338
+loss = 2.32595, step = 2601 (33.976 sec)
+global_step/sec: 2.13856
+loss = 1.5788634, step = 2701 (46.760 sec)
+Saving checkpoints for 2725 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T00:01:03Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2725
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-00:01:11
+Saving dict for global step 2725: acc = 0.98668945, f1 = 0.9404149, global_step = 2725, loss = 1.9318143, precision = 0.93015134, recall = 0.95090747
+Saving 'checkpoint_path' summary for global step 2725: lcc_m2v_results\model\model.ckpt-2725
+global_step/sec: 1.38814
+loss = 1.3115695, step = 2801 (72.039 sec)
+Saving checkpoints for 2899 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T00:03:05Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2899
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-00:03:12
+Saving dict for global step 2899: acc = 0.98641133, f1 = 0.9394028, global_step = 2899, loss = 2.014182, precision = 0.92451745, recall = 0.9547754
+Saving 'checkpoint_path' summary for global step 2899: lcc_m2v_results\model\model.ckpt-2899
+global_step/sec: 1.32199
+loss = 1.6168257, step = 2901 (75.644 sec)
+Saving checkpoints for 2918 into lcc_m2v_results\model\model.ckpt.
+Skip the current checkpoint eval due to throttle secs (120 secs).
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T00:03:22Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2918
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-00:03:28
+Saving dict for global step 2918: acc = 0.98740464, f1 = 0.94388664, global_step = 2918, loss = 1.8695041, precision = 0.9369686, recall = 0.95090747
+Saving 'checkpoint_path' summary for global step 2918: lcc_m2v_results\model\model.ckpt-2918
+Loss for final step: 4.220189.
+Calling model_fn.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:135: to_int64 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+Done calling model_fn.
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2918
+Running local_init_op.
+Done running local_init_op.
+Calling model_fn.
+Done calling model_fn.
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2918
+Running local_init_op.
+Done running local_init_op.
+Using config: {'_model_dir': 'lcc_m2v_results\\model', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 120, '_session_config': allow_soft_placement: true
+graph_options {
+  rewrite_options {
+    meta_optimizer_iterations: ONE
+  }
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x00000230AAFF99E8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+Not using Distribute Coordinator.
+Running training and evaluation locally (non-distributed).
+Start train and evaluate loop. The evaluate will happen after every checkpoint. Checkpoint frequency is determined based on RunConfig arguments: save_checkpoints_steps None or save_checkpoints_secs 120.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\training\training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+Calling model_fn.
+
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:88: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:90: dropout (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dropout instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\layers\core.py:271: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\utilities.py:195: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\utilities.py:203: conv1d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv1D` instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\contrib\rnn\python\ops\lstm_ops.py:597: Layer.add_variable (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.add_weight` method instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:128: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\contrib\crf\python\ops\crf.py:567: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\ops\rnn.py:244: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:152: The name tf.metrics.accuracy is deprecated. Please use tf.compat.v1.metrics.accuracy instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\utilities.py:107: The name tf.diag_part is deprecated. Please use tf.linalg.tensor_diag_part instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:158: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:164: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:165: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
+
+Done calling model_fn.
+Create CheckpointSaverHook.
+Graph was finalized.
+Running local_init_op.
+Done running local_init_op.
+Saving checkpoints for 0 into lcc_m2v_results\model\model.ckpt.
+loss = 116.99335, step = 0
+global_step/sec: 2.67798
+loss = 12.963707, step = 100 (37.342 sec)
+global_step/sec: 2.99199
+loss = 12.65085, step = 200 (33.423 sec)
+global_step/sec: 3.02002
+loss = 7.273774, step = 300 (33.112 sec)
+Saving checkpoints for 342 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T02:22:06Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-342
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-02:22:15
+Saving dict for global step 342: acc = 0.9648363, f1 = 0.82917935, global_step = 342, loss = 5.9411945, precision = 0.84746814, recall = 0.8116632
+Saving 'checkpoint_path' summary for global step 342: lcc_m2v_results\model\model.ckpt-342
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\summary\summary_iterator.py:68: tf_record_iterator (from tensorflow.python.lib.io.tf_record) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use eager execution and: 
+`tf.data.TFRecordDataset(path)`
+global_step/sec: 2.47486
+loss = 9.096582, step = 400 (40.406 sec)
+global_step/sec: 3.4404
+loss = 3.8908648, step = 500 (29.066 sec)
+global_step/sec: 3.57548
+loss = 5.520246, step = 600 (27.969 sec)
+global_step/sec: 3.86928
+loss = 4.3762884, step = 700 (25.844 sec)
+Saving checkpoints for 733 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T02:24:06Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-733
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-02:24:14
+Saving dict for global step 733: acc = 0.97945803, f1 = 0.9041055, global_step = 733, loss = 2.9579694, precision = 0.910655, recall = 0.8976495
+Saving 'checkpoint_path' summary for global step 733: lcc_m2v_results\model\model.ckpt-733
+global_step/sec: 2.82756
+loss = 2.7421231, step = 800 (35.367 sec)
+global_step/sec: 4.40198
+loss = 3.8947532, step = 900 (22.716 sec)
+global_step/sec: 4.07046
+loss = 4.5530853, step = 1000 (24.567 sec)
+global_step/sec: 4.17579
+loss = 1.9464417, step = 1100 (23.948 sec)
+Saving checkpoints for 1195 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T02:26:06Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-1195
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-02:26:14
+Saving dict for global step 1195: acc = 0.9849015, f1 = 0.93190604, global_step = 1195, loss = 2.2752144, precision = 0.93135214, recall = 0.9324606
+Saving 'checkpoint_path' summary for global step 1195: lcc_m2v_results\model\model.ckpt-1195
+global_step/sec: 3.0083
+loss = 2.3924992, step = 1200 (33.309 sec)
+global_step/sec: 4.14171
+loss = 2.1210582, step = 1300 (24.078 sec)
+global_step/sec: 4.52699
+loss = 1.6660469, step = 1400 (22.090 sec)
+global_step/sec: 4.63213
+loss = 3.6142006, step = 1500 (21.587 sec)
+global_step/sec: 4.66308
+loss = 0.66197187, step = 1600 (21.445 sec)
+Saving checkpoints for 1694 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T02:28:06Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-1694
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-02:28:14
+Saving dict for global step 1694: acc = 0.9859345, f1 = 0.93628323, global_step = 1694, loss = 2.198344, precision = 0.9283416, recall = 0.9443618
+Saving 'checkpoint_path' summary for global step 1694: lcc_m2v_results\model\model.ckpt-1694
+global_step/sec: 3.19878
+loss = 1.0355568, step = 1700 (31.263 sec)
+global_step/sec: 4.96902
+loss = 3.945931, step = 1800 (20.125 sec)
+global_step/sec: 4.52016
+loss = 1.7512728, step = 1900 (22.122 sec)
+global_step/sec: 4.73458
+loss = 0.9076561, step = 2000 (21.121 sec)
+global_step/sec: 4.45133
+loss = 2.652399, step = 2100 (22.465 sec)
+global_step/sec: 4.81964
+loss = 4.058638, step = 2200 (20.749 sec)
+Saving checkpoints for 2211 into lcc_m2v_results\model\model.ckpt.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\training\saver.py:963: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T02:30:06Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2211
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-02:30:14
+Saving dict for global step 2211: acc = 0.9885569, f1 = 0.94596994, global_step = 2211, loss = 1.9195895, precision = 0.93876356, recall = 0.9532877
+Saving 'checkpoint_path' summary for global step 2211: lcc_m2v_results\model\model.ckpt-2211
+global_step/sec: 3.30551
+loss = 2.0456116, step = 2300 (30.252 sec)
+global_step/sec: 4.97061
+loss = 0.8719023, step = 2400 (20.118 sec)
+global_step/sec: 4.71753
+loss = 0.66104203, step = 2500 (21.198 sec)
+global_step/sec: 4.80311
+loss = 0.3924942, step = 2600 (20.820 sec)
+global_step/sec: 4.74312
+loss = 2.756558, step = 2700 (21.083 sec)
+Saving checkpoints for 2745 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T02:32:06Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2745
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-02:32:15
+Saving dict for global step 2745: acc = 0.9884377, f1 = 0.9458698, global_step = 2745, loss = 1.795442, precision = 0.9429332, recall = 0.94882476
+Saving 'checkpoint_path' summary for global step 2745: lcc_m2v_results\model\model.ckpt-2745
+global_step/sec: 3.32734
+loss = 3.3542798, step = 2800 (30.054 sec)
+global_step/sec: 5.06748
+loss = 0.8296045, step = 2900 (19.734 sec)
+Saving checkpoints for 2918 into lcc_m2v_results\model\model.ckpt.
+Skip the current checkpoint eval due to throttle secs (120 secs).
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T02:32:50Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2918
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-02:32:58
+Saving dict for global step 2918: acc = 0.9887953, f1 = 0.946777, global_step = 2918, loss = 1.7626859, precision = 0.9409345, recall = 0.9526926
+Saving 'checkpoint_path' summary for global step 2918: lcc_m2v_results\model\model.ckpt-2918
+Loss for final step: 0.5185173.
+Calling model_fn.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:135: to_int64 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+Done calling model_fn.
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2918
+Running local_init_op.
+Done running local_init_op.
+Calling model_fn.
+Done calling model_fn.
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2918
+Running local_init_op.
+Done running local_init_op.
+Using config: {'_model_dir': 'lcc_m2v_results\\model', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 120, '_session_config': allow_soft_placement: true
+graph_options {
+  rewrite_options {
+    meta_optimizer_iterations: ONE
+  }
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x000002BD69D799E8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+Not using Distribute Coordinator.
+Running training and evaluation locally (non-distributed).
+Start train and evaluate loop. The evaluate will happen after every checkpoint. Checkpoint frequency is determined based on RunConfig arguments: save_checkpoints_steps None or save_checkpoints_secs 120.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\training\training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+Calling model_fn.
+
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:88: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:90: dropout (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dropout instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\layers\core.py:271: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\utilities.py:195: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\utilities.py:203: conv1d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv1D` instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\contrib\rnn\python\ops\lstm_ops.py:597: Layer.add_variable (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.add_weight` method instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:128: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\contrib\crf\python\ops\crf.py:567: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\ops\rnn.py:244: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:152: The name tf.metrics.accuracy is deprecated. Please use tf.compat.v1.metrics.accuracy instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\utilities.py:107: The name tf.diag_part is deprecated. Please use tf.linalg.tensor_diag_part instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:158: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:164: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:165: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
+
+Done calling model_fn.
+Create CheckpointSaverHook.
+Graph was finalized.
+Running local_init_op.
+Done running local_init_op.
+Saving checkpoints for 0 into lcc_m2v_results\model\model.ckpt.
+loss = 113.99669, step = 0
+global_step/sec: 2.36413
+loss = 31.071741, step = 100 (42.299 sec)
+global_step/sec: 2.85133
+loss = 9.045145, step = 200 (35.071 sec)
+global_step/sec: 2.99205
+loss = 9.472686, step = 300 (33.425 sec)
+Saving checkpoints for 317 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T04:07:49Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-317
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-04:07:59
+Saving dict for global step 317: acc = 0.9631278, f1 = 0.82651186, global_step = 317, loss = 6.2189345, precision = 0.84907436, recall = 0.80511755
+Saving 'checkpoint_path' summary for global step 317: lcc_m2v_results\model\model.ckpt-317
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\summary\summary_iterator.py:68: tf_record_iterator (from tensorflow.python.lib.io.tf_record) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use eager execution and: 
+`tf.data.TFRecordDataset(path)`
+global_step/sec: 2.25937
+loss = 5.905815, step = 400 (44.257 sec)
+global_step/sec: 3.50219
+loss = 2.0954416, step = 500 (28.554 sec)
+global_step/sec: 3.2392
+loss = 1.7808822, step = 600 (30.872 sec)
+Saving checkpoints for 679 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T04:09:49Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-679
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-04:09:58
+Saving dict for global step 679: acc = 0.9763986, f1 = 0.88731766, global_step = 679, loss = 3.2593203, precision = 0.8974437, recall = 0.87741745
+Saving 'checkpoint_path' summary for global step 679: lcc_m2v_results\model\model.ckpt-679
+global_step/sec: 2.65357
+loss = 6.1060414, step = 700 (37.685 sec)
+global_step/sec: 3.82774
+loss = 2.5281863, step = 800 (26.125 sec)
+global_step/sec: 3.80025
+loss = 4.901032, step = 900 (26.314 sec)
+global_step/sec: 4.01433
+loss = 2.6465135, step = 1000 (24.911 sec)
+global_step/sec: 3.95474
+loss = 2.9270983, step = 1100 (25.286 sec)
+Saving checkpoints for 1109 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T04:11:49Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-1109
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-04:12:00
+Saving dict for global step 1109: acc = 0.98378897, f1 = 0.9269093, global_step = 1109, loss = 2.4217942, precision = 0.92940474, recall = 0.9244273
+Saving 'checkpoint_path' summary for global step 1109: lcc_m2v_results\model\model.ckpt-1109
+global_step/sec: 2.7399
+loss = 7.301748, step = 1200 (36.498 sec)
+global_step/sec: 3.92541
+loss = 1.7236059, step = 1300 (25.476 sec)
+global_step/sec: 4.00297
+loss = 1.271909, step = 1400 (24.979 sec)
+global_step/sec: 3.97676
+loss = 1.9728485, step = 1500 (25.147 sec)
+Saving checkpoints for 1542 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T04:13:49Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-1542
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-04:13:58
+Saving dict for global step 1542: acc = 0.9863716, f1 = 0.93856406, global_step = 1542, loss = 2.1063235, precision = 0.9340012, recall = 0.9431717
+Saving 'checkpoint_path' summary for global step 1542: lcc_m2v_results\model\model.ckpt-1542
+global_step/sec: 2.98215
+loss = 2.506743, step = 1600 (33.533 sec)
+global_step/sec: 4.17531
+loss = 1.7790009, step = 1700 (23.950 sec)
+global_step/sec: 4.5236
+loss = 0.6771782, step = 1800 (22.106 sec)
+global_step/sec: 4.70448
+loss = 1.3496872, step = 1900 (21.256 sec)
+global_step/sec: 4.46617
+loss = 1.5894878, step = 2000 (22.391 sec)
+Saving checkpoints for 2034 into lcc_m2v_results\model\model.ckpt.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\training\saver.py:963: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T04:15:49Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2034
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-04:15:58
+Saving dict for global step 2034: acc = 0.9876033, f1 = 0.9445349, global_step = 2034, loss = 1.9491928, precision = 0.93911767, recall = 0.9500149
+Saving 'checkpoint_path' summary for global step 2034: lcc_m2v_results\model\model.ckpt-2034
+global_step/sec: 3.17188
+loss = 1.235711, step = 2100 (31.527 sec)
+global_step/sec: 4.91654
+loss = 0.7309273, step = 2200 (20.339 sec)
+global_step/sec: 4.63265
+loss = 1.2181104, step = 2300 (21.586 sec)
+global_step/sec: 4.93469
+loss = 1.251992, step = 2400 (20.265 sec)
+global_step/sec: 4.84225
+loss = 1.7674663, step = 2500 (20.652 sec)
+Saving checkpoints for 2560 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T04:17:49Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2560
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-04:17:58
+Saving dict for global step 2560: acc = 0.98811984, f1 = 0.9463835, global_step = 2560, loss = 1.763397, precision = 0.94483984, recall = 0.9479322
+Saving 'checkpoint_path' summary for global step 2560: lcc_m2v_results\model\model.ckpt-2560
+global_step/sec: 3.23394
+loss = 1.6868317, step = 2600 (30.922 sec)
+global_step/sec: 5.1144
+loss = 1.2723484, step = 2700 (19.553 sec)
+global_step/sec: 4.68132
+loss = 2.2893233, step = 2800 (21.361 sec)
+global_step/sec: 5.1243
+loss = 1.0786136, step = 2900 (19.515 sec)
+Saving checkpoints for 2918 into lcc_m2v_results\model\model.ckpt.
+Skip the current checkpoint eval due to throttle secs (120 secs).
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T04:19:12Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2918
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-04:19:21
+Saving dict for global step 2918: acc = 0.98835826, f1 = 0.94764704, global_step = 2918, loss = 1.781638, precision = 0.93690026, recall = 0.95864326
+Saving 'checkpoint_path' summary for global step 2918: lcc_m2v_results\model\model.ckpt-2918
+Loss for final step: 1.5433029.
+Calling model_fn.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:135: to_int64 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+Done calling model_fn.
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2918
+Running local_init_op.
+Done running local_init_op.
+Calling model_fn.
+Done calling model_fn.
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2918
+Running local_init_op.
+Done running local_init_op.
+Using config: {'_model_dir': 'lcc_m2v_results\\model', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 120, '_session_config': allow_soft_placement: true
+graph_options {
+  rewrite_options {
+    meta_optimizer_iterations: ONE
+  }
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x000001B2329C89E8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+Not using Distribute Coordinator.
+Running training and evaluation locally (non-distributed).
+Start train and evaluate loop. The evaluate will happen after every checkpoint. Checkpoint frequency is determined based on RunConfig arguments: save_checkpoints_steps None or save_checkpoints_secs 120.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\training\training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+Calling model_fn.
+
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:88: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:90: dropout (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dropout instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\layers\core.py:271: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\utilities.py:195: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\utilities.py:203: conv1d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv1D` instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\contrib\rnn\python\ops\lstm_ops.py:597: Layer.add_variable (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.add_weight` method instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:128: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\contrib\crf\python\ops\crf.py:567: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\ops\rnn.py:244: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:152: The name tf.metrics.accuracy is deprecated. Please use tf.compat.v1.metrics.accuracy instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\utilities.py:107: The name tf.diag_part is deprecated. Please use tf.linalg.tensor_diag_part instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:158: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:164: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:165: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
+
+Done calling model_fn.
+Create CheckpointSaverHook.
+Graph was finalized.
+Running local_init_op.
+Done running local_init_op.
+Saving checkpoints for 0 into lcc_m2v_results\model\model.ckpt.
+loss = 130.60025, step = 0
+global_step/sec: 2.6521
+loss = 12.7246, step = 100 (37.706 sec)
+global_step/sec: 2.91151
+loss = 6.3578644, step = 200 (34.346 sec)
+global_step/sec: 3.15576
+loss = 13.923535, step = 300 (31.704 sec)
+Saving checkpoints for 340 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T05:51:10Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-340
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-05:51:19
+Saving dict for global step 340: acc = 0.96694213, f1 = 0.839789, global_step = 340, loss = 4.852286, precision = 0.85094684, recall = 0.82891995
+Saving 'checkpoint_path' summary for global step 340: lcc_m2v_results\model\model.ckpt-340
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\summary\summary_iterator.py:68: tf_record_iterator (from tensorflow.python.lib.io.tf_record) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use eager execution and: 
+`tf.data.TFRecordDataset(path)`
+global_step/sec: 2.43698
+loss = 3.7817848, step = 400 (41.019 sec)
+global_step/sec: 3.19815
+loss = 3.8328285, step = 500 (31.268 sec)
+global_step/sec: 3.83894
+loss = 8.950886, step = 600 (26.049 sec)
+global_step/sec: 3.80018
+loss = 4.6430173, step = 700 (26.315 sec)
+Saving checkpoints for 725 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T05:53:10Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-725
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-05:53:18
+Saving dict for global step 725: acc = 0.9814447, f1 = 0.9114074, global_step = 725, loss = 2.6915863, precision = 0.90764236, recall = 0.9152038
+Saving 'checkpoint_path' summary for global step 725: lcc_m2v_results\model\model.ckpt-725
+global_step/sec: 2.69566
+loss = 1.828057, step = 800 (37.097 sec)
+global_step/sec: 4.47205
+loss = 5.728819, step = 900 (22.361 sec)
+global_step/sec: 3.96992
+loss = 2.1817164, step = 1000 (25.189 sec)
+global_step/sec: 4.53544
+loss = 1.8953888, step = 1100 (22.049 sec)
+Saving checkpoints for 1186 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T05:55:10Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-1186
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-05:55:19
+Saving dict for global step 1186: acc = 0.98573583, f1 = 0.9353366, global_step = 1186, loss = 2.1442537, precision = 0.92619604, recall = 0.94465935
+Saving 'checkpoint_path' summary for global step 1186: lcc_m2v_results\model\model.ckpt-1186
+global_step/sec: 2.93286
+loss = 0.7321433, step = 1200 (34.096 sec)
+global_step/sec: 4.42872
+loss = 4.935499, step = 1300 (22.580 sec)
+global_step/sec: 4.37723
+loss = 3.45839, step = 1400 (22.846 sec)
+global_step/sec: 4.06834
+loss = 1.9448086, step = 1500 (24.580 sec)
+global_step/sec: 4.76863
+loss = 2.7543483, step = 1600 (20.970 sec)
+Saving checkpoints for 1673 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T05:57:10Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-1673
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-05:57:19
+Saving dict for global step 1673: acc = 0.98752385, f1 = 0.9422878, global_step = 1673, loss = 1.8687478, precision = 0.93497366, recall = 0.94971734
+Saving 'checkpoint_path' summary for global step 1673: lcc_m2v_results\model\model.ckpt-1673
+global_step/sec: 3.12171
+loss = 0.8752686, step = 1700 (32.034 sec)
+global_step/sec: 4.83712
+loss = 1.2091084, step = 1800 (20.673 sec)
+global_step/sec: 4.72288
+loss = 1.5163265, step = 1900 (21.174 sec)
+global_step/sec: 4.82982
+loss = 0.96121216, step = 2000 (20.705 sec)
+global_step/sec: 4.78289
+loss = 0.8167917, step = 2100 (20.908 sec)
+Saving checkpoints for 2195 into lcc_m2v_results\model\model.ckpt.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\training\saver.py:963: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T05:59:11Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2195
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-05:59:19
+Saving dict for global step 2195: acc = 0.98752385, f1 = 0.9434744, global_step = 2195, loss = 1.7849888, precision = 0.93847513, recall = 0.9485272
+Saving 'checkpoint_path' summary for global step 2195: lcc_m2v_results\model\model.ckpt-2195
+global_step/sec: 3.13394
+loss = 3.0509832, step = 2200 (31.987 sec)
+global_step/sec: 4.90384
+loss = 1.3516785, step = 2300 (20.314 sec)
+global_step/sec: 4.69861
+loss = 2.2884774, step = 2400 (21.283 sec)
+global_step/sec: 4.93789
+loss = 4.068185, step = 2500 (20.252 sec)
+global_step/sec: 5.09515
+loss = 1.6557842, step = 2600 (19.627 sec)
+global_step/sec: 5.1242
+loss = 1.329483, step = 2700 (19.515 sec)
+Saving checkpoints for 2733 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T06:01:11Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2733
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-06:01:19
+Saving dict for global step 2733: acc = 0.98764306, f1 = 0.94327396, global_step = 2733, loss = 1.7596815, precision = 0.93432575, recall = 0.95239514
+Saving 'checkpoint_path' summary for global step 2733: lcc_m2v_results\model\model.ckpt-2733
+global_step/sec: 3.32442
+loss = 1.8797386, step = 2800 (30.080 sec)
+global_step/sec: 4.90384
+loss = 0.6371277, step = 2900 (20.392 sec)
+Saving checkpoints for 2918 into lcc_m2v_results\model\model.ckpt.
+Skip the current checkpoint eval due to throttle secs (120 secs).
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T06:01:57Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2918
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-06:02:05
+Saving dict for global step 2918: acc = 0.9887158, f1 = 0.94746137, global_step = 2918, loss = 1.7177334, precision = 0.9373908, recall = 0.9577507
+Saving 'checkpoint_path' summary for global step 2918: lcc_m2v_results\model\model.ckpt-2918
+Loss for final step: 0.66424406.
+Calling model_fn.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:135: to_int64 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+Done calling model_fn.
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2918
+Running local_init_op.
+Done running local_init_op.
+Calling model_fn.
+Done calling model_fn.
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2918
+Running local_init_op.
+Done running local_init_op.
+Using config: {'_model_dir': 'lcc_m2v_results\\model', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 120, '_session_config': allow_soft_placement: true
+graph_options {
+  rewrite_options {
+    meta_optimizer_iterations: ONE
+  }
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x000002919D4A99B0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+Not using Distribute Coordinator.
+Running training and evaluation locally (non-distributed).
+Start train and evaluate loop. The evaluate will happen after every checkpoint. Checkpoint frequency is determined based on RunConfig arguments: save_checkpoints_steps None or save_checkpoints_secs 120.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\training\training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+Calling model_fn.
+
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:88: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:90: dropout (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dropout instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\layers\core.py:271: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\utilities.py:195: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\utilities.py:203: conv1d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv1D` instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\contrib\rnn\python\ops\lstm_ops.py:597: Layer.add_variable (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.add_weight` method instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:128: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\contrib\crf\python\ops\crf.py:567: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\ops\rnn.py:244: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:152: The name tf.metrics.accuracy is deprecated. Please use tf.compat.v1.metrics.accuracy instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\utilities.py:107: The name tf.diag_part is deprecated. Please use tf.linalg.tensor_diag_part instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:158: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:164: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:165: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
+
+Done calling model_fn.
+Create CheckpointSaverHook.
+Graph was finalized.
+Running local_init_op.
+Done running local_init_op.
+Saving checkpoints for 0 into lcc_m2v_results\model\model.ckpt.
+loss = 140.69296, step = 0
+global_step/sec: 2.65319
+loss = 9.661701, step = 100 (37.690 sec)
+global_step/sec: 2.99182
+loss = 15.278943, step = 200 (33.424 sec)
+global_step/sec: 3.15869
+loss = 7.0082345, step = 300 (31.659 sec)
+Saving checkpoints for 344 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T07:33:55Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-344
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-07:34:04
+Saving dict for global step 344: acc = 0.9671408, f1 = 0.84315866, global_step = 344, loss = 5.180619, precision = 0.88859594, recall = 0.8021422
+Saving 'checkpoint_path' summary for global step 344: lcc_m2v_results\model\model.ckpt-344
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\summary\summary_iterator.py:68: tf_record_iterator (from tensorflow.python.lib.io.tf_record) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use eager execution and: 
+`tf.data.TFRecordDataset(path)`
+global_step/sec: 2.39234
+loss = 9.212087, step = 400 (41.816 sec)
+global_step/sec: 3.20938
+loss = 11.827871, step = 500 (31.143 sec)
+global_step/sec: 3.74021
+loss = 7.0404983, step = 600 (26.736 sec)
+global_step/sec: 3.64437
+loss = 7.964956, step = 700 (27.440 sec)
+Saving checkpoints for 728 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T07:35:55Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-728
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-07:36:03
+Saving dict for global step 728: acc = 0.9744914, f1 = 0.8849869, global_step = 728, loss = 3.3381102, precision = 0.870717, recall = 0.89973223
+Saving 'checkpoint_path' summary for global step 728: lcc_m2v_results\model\model.ckpt-728
+global_step/sec: 2.79699
+loss = 7.216016, step = 800 (35.753 sec)
+global_step/sec: 4.15013
+loss = 4.340825, step = 900 (24.096 sec)
+global_step/sec: 4.37424
+loss = 2.7041981, step = 1000 (22.861 sec)
+global_step/sec: 4.01223
+loss = 2.9204123, step = 1100 (24.924 sec)
+Saving checkpoints for 1181 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T07:37:55Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-1181
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-07:38:03
+Saving dict for global step 1181: acc = 0.9845041, f1 = 0.93046856, global_step = 1181, loss = 2.172828, precision = 0.9332535, recall = 0.9277001
+Saving 'checkpoint_path' summary for global step 1181: lcc_m2v_results\model\model.ckpt-1181
+global_step/sec: 2.96819
+loss = 2.1400561, step = 1200 (33.691 sec)
+global_step/sec: 4.37125
+loss = 2.369709, step = 1300 (22.877 sec)
+global_step/sec: 4.60065
+loss = 10.987309, step = 1400 (21.736 sec)
+global_step/sec: 4.40131
+loss = 2.828703, step = 1500 (22.721 sec)
+global_step/sec: 4.05803
+loss = 1.9544605, step = 1600 (24.643 sec)
+Saving checkpoints for 1663 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T07:39:55Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-1663
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-07:40:03
+Saving dict for global step 1663: acc = 0.98641133, f1 = 0.93818396, global_step = 1663, loss = 1.9873543, precision = 0.93266684, recall = 0.9437667
+Saving 'checkpoint_path' summary for global step 1663: lcc_m2v_results\model\model.ckpt-1663
+global_step/sec: 3.19018
+loss = 1.403239, step = 1700 (31.346 sec)
+global_step/sec: 4.69861
+loss = 1.7747723, step = 1800 (21.299 sec)
+global_step/sec: 4.71285
+loss = 3.239006, step = 1900 (21.203 sec)
+global_step/sec: 4.64743
+loss = 2.3545196, step = 2000 (21.517 sec)
+global_step/sec: 4.84444
+loss = 0.515047, step = 2100 (20.642 sec)
+Saving checkpoints for 2189 into lcc_m2v_results\model\model.ckpt.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\training\saver.py:963: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T07:41:55Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2189
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-07:42:03
+Saving dict for global step 2189: acc = 0.9870073, f1 = 0.9420759, global_step = 2189, loss = 1.8942658, precision = 0.9311247, recall = 0.9532877
+Saving 'checkpoint_path' summary for global step 2189: lcc_m2v_results\model\model.ckpt-2189
+global_step/sec: 3.28854
+loss = 3.4874954, step = 2200 (30.409 sec)
+global_step/sec: 4.66436
+loss = 0.6399689, step = 2300 (21.439 sec)
+global_step/sec: 4.74741
+loss = 1.636554, step = 2400 (21.064 sec)
+global_step/sec: 5.20708
+loss = 3.935917, step = 2500 (19.205 sec)
+global_step/sec: 4.70552
+loss = 1.4725014, step = 2600 (21.252 sec)
+global_step/sec: 4.98792
+loss = 1.6090046, step = 2700 (20.048 sec)
+Saving checkpoints for 2725 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T07:43:55Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2725
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-07:44:04
+Saving dict for global step 2725: acc = 0.9885966, f1 = 0.9484262, global_step = 2725, loss = 1.7036965, precision = 0.9421609, recall = 0.9547754
+Saving 'checkpoint_path' summary for global step 2725: lcc_m2v_results\model\model.ckpt-2725
+global_step/sec: 3.42575
+loss = 1.130573, step = 2800 (29.191 sec)
+global_step/sec: 5.53112
+loss = 0.9475683, step = 2900 (18.080 sec)
+Saving checkpoints for 2918 into lcc_m2v_results\model\model.ckpt.
+Skip the current checkpoint eval due to throttle secs (120 secs).
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T07:44:41Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2918
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-07:44:50
+Saving dict for global step 2918: acc = 0.9884774, f1 = 0.9478519, global_step = 2918, loss = 1.6219902, precision = 0.9439363, recall = 0.95180005
+Saving 'checkpoint_path' summary for global step 2918: lcc_m2v_results\model\model.ckpt-2918
+Loss for final step: 0.04574127.
+Calling model_fn.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:135: to_int64 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+Done calling model_fn.
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2918
+Running local_init_op.
+Done running local_init_op.
+Calling model_fn.
+Done calling model_fn.
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2918
+Running local_init_op.
+Done running local_init_op.
+Using config: {'_model_dir': 'lcc_m2v_results\\model', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 120, '_session_config': allow_soft_placement: true
+graph_options {
+  rewrite_options {
+    meta_optimizer_iterations: ONE
+  }
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x000001BFAC618A20>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+Not using Distribute Coordinator.
+Running training and evaluation locally (non-distributed).
+Start train and evaluate loop. The evaluate will happen after every checkpoint. Checkpoint frequency is determined based on RunConfig arguments: save_checkpoints_steps None or save_checkpoints_secs 120.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\training\training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+Calling model_fn.
+
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:88: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:90: dropout (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dropout instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\layers\core.py:271: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\utilities.py:195: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\utilities.py:203: conv1d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv1D` instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\contrib\rnn\python\ops\lstm_ops.py:597: Layer.add_variable (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.add_weight` method instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:128: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\contrib\crf\python\ops\crf.py:567: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\ops\rnn.py:244: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:152: The name tf.metrics.accuracy is deprecated. Please use tf.compat.v1.metrics.accuracy instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\utilities.py:107: The name tf.diag_part is deprecated. Please use tf.linalg.tensor_diag_part instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:158: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:164: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:165: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
+
+Done calling model_fn.
+Create CheckpointSaverHook.
+Graph was finalized.
+Running local_init_op.
+Done running local_init_op.
+Saving checkpoints for 0 into lcc_m2v_results\model\model.ckpt.
+loss = 105.562744, step = 0
+global_step/sec: 2.67874
+loss = 10.801428, step = 100 (37.331 sec)
+global_step/sec: 3.05466
+loss = 12.409964, step = 200 (32.737 sec)
+global_step/sec: 2.97513
+loss = 11.659731, step = 300 (33.612 sec)
+Saving checkpoints for 340 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T09:16:44Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-340
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-09:16:53
+Saving dict for global step 340: acc = 0.966068, f1 = 0.83335906, global_step = 340, loss = 5.598276, precision = 0.86468333, recall = 0.8042249
+Saving 'checkpoint_path' summary for global step 340: lcc_m2v_results\model\model.ckpt-340
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\summary\summary_iterator.py:68: tf_record_iterator (from tensorflow.python.lib.io.tf_record) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use eager execution and: 
+`tf.data.TFRecordDataset(path)`
+global_step/sec: 2.48235
+loss = 5.154746, step = 400 (40.284 sec)
+global_step/sec: 3.45732
+loss = 6.834784, step = 500 (28.924 sec)
+global_step/sec: 3.48367
+loss = 1.9544318, step = 600 (28.705 sec)
+global_step/sec: 3.83204
+loss = 6.4459276, step = 700 (26.096 sec)
+Saving checkpoints for 733 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T09:18:44Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-733
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-09:18:52
+Saving dict for global step 733: acc = 0.9806103, f1 = 0.9072659, global_step = 733, loss = 2.9078188, precision = 0.91369945, recall = 0.90092236
+Saving 'checkpoint_path' summary for global step 733: lcc_m2v_results\model\model.ckpt-733
+global_step/sec: 2.6698
+loss = 4.0695777, step = 800 (37.456 sec)
+global_step/sec: 4.27489
+loss = 2.4373107, step = 900 (23.392 sec)
+global_step/sec: 3.99719
+loss = 4.186184, step = 1000 (25.033 sec)
+global_step/sec: 3.90214
+loss = 4.5337553, step = 1100 (25.611 sec)
+Saving checkpoints for 1174 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T09:20:44Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-1174
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-09:20:52
+Saving dict for global step 1174: acc = 0.9847823, f1 = 0.93016344, global_step = 1174, loss = 2.280289, precision = 0.9290591, recall = 0.9312705
+Saving 'checkpoint_path' summary for global step 1174: lcc_m2v_results\model\model.ckpt-1174
+global_step/sec: 3.00887
+loss = 2.4009204, step = 1200 (33.251 sec)
+global_step/sec: 4.46893
+loss = 0.85827255, step = 1300 (22.361 sec)
+global_step/sec: 4.34749
+loss = 2.0093555, step = 1400 (23.002 sec)
+global_step/sec: 4.64743
+loss = 3.8975112, step = 1500 (21.517 sec)
+global_step/sec: 4.48145
+loss = 0.5719889, step = 1600 (22.314 sec)
+Saving checkpoints for 1673 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T09:22:44Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-1673
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-09:22:52
+Saving dict for global step 1673: acc = 0.9855769, f1 = 0.93428946, global_step = 1673, loss = 2.27368, precision = 0.91935486, recall = 0.94971734
+Saving 'checkpoint_path' summary for global step 1673: lcc_m2v_results\model\model.ckpt-1673
+global_step/sec: 3.29023
+loss = 1.5851377, step = 1700 (30.393 sec)
+global_step/sec: 4.79723
+loss = 1.2907839, step = 1800 (20.845 sec)
+global_step/sec: 4.80804
+loss = 1.6464589, step = 1900 (20.798 sec)
+global_step/sec: 5.04295
+loss = 0.2711525, step = 2000 (19.830 sec)
+global_step/sec: 4.65757
+loss = 1.2979629, step = 2100 (21.470 sec)
+global_step/sec: 4.74389
+loss = 1.4882077, step = 2200 (21.080 sec)
+Saving checkpoints for 2203 into lcc_m2v_results\model\model.ckpt.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\training\saver.py:963: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T09:24:44Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2203
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-09:24:52
+Saving dict for global step 2203: acc = 0.98724574, f1 = 0.94228226, global_step = 2203, loss = 2.0226057, precision = 0.9303944, recall = 0.95447785
+Saving 'checkpoint_path' summary for global step 2203: lcc_m2v_results\model\model.ckpt-2203
+global_step/sec: 3.42037
+loss = 1.1462303, step = 2300 (29.237 sec)
+global_step/sec: 5.18179
+loss = 1.701896, step = 2400 (19.298 sec)
+global_step/sec: 4.80083
+loss = 0.9579958, step = 2500 (20.830 sec)
+global_step/sec: 5.14844
+loss = 2.3725376, step = 2600 (19.439 sec)
+global_step/sec: 5.04693
+loss = 0.74760973, step = 2700 (19.798 sec)
+Saving checkpoints for 2767 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T09:26:45Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2767
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-09:26:53
+Saving dict for global step 2767: acc = 0.98800063, f1 = 0.94436264, global_step = 2767, loss = 1.8398117, precision = 0.9344596, recall = 0.95447785
+Saving 'checkpoint_path' summary for global step 2767: lcc_m2v_results\model\model.ckpt-2767
+global_step/sec: 3.40762
+loss = 0.46273738, step = 2800 (29.346 sec)
+global_step/sec: 4.77219
+loss = 1.625502, step = 2900 (20.955 sec)
+Saving checkpoints for 2918 into lcc_m2v_results\model\model.ckpt.
+Skip the current checkpoint eval due to throttle secs (120 secs).
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T09:27:26Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2918
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-09:27:34
+Saving dict for global step 2918: acc = 0.9881596, f1 = 0.94567466, global_step = 2918, loss = 1.7777992, precision = 0.93847054, recall = 0.9529902
+Saving 'checkpoint_path' summary for global step 2918: lcc_m2v_results\model\model.ckpt-2918
+Loss for final step: 4.4707947.
+Calling model_fn.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:135: to_int64 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+Done calling model_fn.
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2918
+Running local_init_op.
+Done running local_init_op.
+Calling model_fn.
+Done calling model_fn.
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2918
+Running local_init_op.
+Done running local_init_op.
+Using config: {'_model_dir': 'lcc_m2v_results\\model', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 120, '_session_config': allow_soft_placement: true
+graph_options {
+  rewrite_options {
+    meta_optimizer_iterations: ONE
+  }
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x0000019460699A20>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+Not using Distribute Coordinator.
+Running training and evaluation locally (non-distributed).
+Start train and evaluate loop. The evaluate will happen after every checkpoint. Checkpoint frequency is determined based on RunConfig arguments: save_checkpoints_steps None or save_checkpoints_secs 120.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\training\training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+Calling model_fn.
+
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:88: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:90: dropout (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dropout instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\layers\core.py:271: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\utilities.py:195: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\utilities.py:203: conv1d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv1D` instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\contrib\rnn\python\ops\lstm_ops.py:597: Layer.add_variable (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.add_weight` method instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:128: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\contrib\crf\python\ops\crf.py:567: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\ops\rnn.py:244: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:152: The name tf.metrics.accuracy is deprecated. Please use tf.compat.v1.metrics.accuracy instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\utilities.py:107: The name tf.diag_part is deprecated. Please use tf.linalg.tensor_diag_part instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:158: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:164: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:165: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
+
+Done calling model_fn.
+Create CheckpointSaverHook.
+Graph was finalized.
+Running local_init_op.
+Done running local_init_op.
+Saving checkpoints for 0 into lcc_m2v_results\model\model.ckpt.
+loss = 81.74735, step = 0
+global_step/sec: 2.73717
+loss = 13.4105625, step = 100 (36.534 sec)
+global_step/sec: 2.79947
+loss = 9.276099, step = 200 (35.721 sec)
+global_step/sec: 3.17593
+loss = 4.1269593, step = 300 (31.487 sec)
+Saving checkpoints for 341 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T10:59:53Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-341
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-11:00:02
+Saving dict for global step 341: acc = 0.9680944, f1 = 0.84827805, global_step = 341, loss = 4.974725, precision = 0.8862237, recall = 0.81344837
+Saving 'checkpoint_path' summary for global step 341: lcc_m2v_results\model\model.ckpt-341
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\summary\summary_iterator.py:68: tf_record_iterator (from tensorflow.python.lib.io.tf_record) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use eager execution and: 
+`tf.data.TFRecordDataset(path)`
+global_step/sec: 2.39144
+loss = 4.854985, step = 400 (41.816 sec)
+global_step/sec: 3.56717
+loss = 5.916425, step = 500 (28.033 sec)
+global_step/sec: 3.71875
+loss = 8.023176, step = 600 (26.891 sec)
+global_step/sec: 3.70342
+loss = 2.670217, step = 700 (27.002 sec)
+Saving checkpoints for 733 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T11:01:53Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-733
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-11:02:01
+Saving dict for global step 733: acc = 0.9784647, f1 = 0.8990169, global_step = 733, loss = 2.9483259, precision = 0.90008944, recall = 0.897947
+Saving 'checkpoint_path' summary for global step 733: lcc_m2v_results\model\model.ckpt-733
+global_step/sec: 2.76676
+loss = 5.8028617, step = 800 (36.143 sec)
+global_step/sec: 3.99719
+loss = 2.8044379, step = 900 (25.018 sec)
+global_step/sec: 4.09176
+loss = 3.700262, step = 1000 (24.439 sec)
+global_step/sec: 4.16906
+loss = 6.505534, step = 1100 (23.986 sec)
+Saving checkpoints for 1183 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T11:03:53Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-1183
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-11:04:02
+Saving dict for global step 1183: acc = 0.98438495, f1 = 0.9301705, global_step = 1183, loss = 2.2092502, precision = 0.92700946, recall = 0.9333532
+Saving 'checkpoint_path' summary for global step 1183: lcc_m2v_results\model\model.ckpt-1183
+global_step/sec: 3.07225
+loss = 2.591885, step = 1200 (32.549 sec)
+global_step/sec: 4.47518
+loss = 1.1655328, step = 1300 (22.345 sec)
+global_step/sec: 4.43179
+loss = 3.1197085, step = 1400 (22.564 sec)
+global_step/sec: 4.16635
+loss = 3.3804257, step = 1500 (24.002 sec)
+global_step/sec: 4.55805
+loss = 1.6149018, step = 1600 (21.939 sec)
+Saving checkpoints for 1675 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T11:05:53Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-1675
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-11:06:02
+Saving dict for global step 1675: acc = 0.9871662, f1 = 0.9428066, global_step = 1675, loss = 1.9121635, precision = 0.9342682, recall = 0.9515025
+Saving 'checkpoint_path' summary for global step 1675: lcc_m2v_results\model\model.ckpt-1675
+global_step/sec: 3.28685
+loss = 2.4270146, step = 1700 (30.424 sec)
+global_step/sec: 4.71245
+loss = 2.337616, step = 1800 (21.220 sec)
+global_step/sec: 4.85179
+loss = 1.5522445, step = 1900 (20.611 sec)
+global_step/sec: 5.20708
+loss = 0.98609096, step = 2000 (19.205 sec)
+global_step/sec: 5.28448
+loss = 2.989406, step = 2100 (18.923 sec)
+global_step/sec: 4.82254
+loss = 3.4363728, step = 2200 (20.736 sec)
+Saving checkpoints for 2224 into lcc_m2v_results\model\model.ckpt.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\training\saver.py:963: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T11:07:54Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2224
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-11:08:02
+Saving dict for global step 2224: acc = 0.9874841, f1 = 0.94456697, global_step = 2224, loss = 1.8361791, precision = 0.93372095, recall = 0.955668
+Saving 'checkpoint_path' summary for global step 2224: lcc_m2v_results\model\model.ckpt-2224
+global_step/sec: 3.27006
+loss = 0.76447374, step = 2300 (30.580 sec)
+global_step/sec: 5.28012
+loss = 1.9952478, step = 2400 (18.939 sec)
+global_step/sec: 5.04693
+loss = 0.99147874, step = 2500 (19.814 sec)
+global_step/sec: 5.42791
+loss = 1.3775364, step = 2600 (18.423 sec)
+global_step/sec: 4.60728
+loss = 1.8049675, step = 2700 (21.705 sec)
+Saving checkpoints for 2782 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T11:09:54Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2782
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-11:10:02
+Saving dict for global step 2782: acc = 0.98923236, f1 = 0.9497717, global_step = 2782, loss = 1.6852684, precision = 0.94049007, recall = 0.95923835
+Saving 'checkpoint_path' summary for global step 2782: lcc_m2v_results\model\model.ckpt-2782
+global_step/sec: 3.51428
+loss = 2.5856624, step = 2800 (28.455 sec)
+global_step/sec: 5.04693
+loss = 0.62851334, step = 2900 (19.814 sec)
+Saving checkpoints for 2918 into lcc_m2v_results\model\model.ckpt.
+Skip the current checkpoint eval due to throttle secs (120 secs).
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T11:10:30Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2918
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-11:10:38
+Saving dict for global step 2918: acc = 0.9895105, f1 = 0.9513385, global_step = 2918, loss = 1.5995244, precision = 0.9458824, recall = 0.9568581
+Saving 'checkpoint_path' summary for global step 2918: lcc_m2v_results\model\model.ckpt-2918
+Loss for final step: 1.4458942.
+Calling model_fn.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:135: to_int64 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+Done calling model_fn.
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2918
+Running local_init_op.
+Done running local_init_op.
+Calling model_fn.
+Done calling model_fn.
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2918
+Running local_init_op.
+Done running local_init_op.
+Using config: {'_model_dir': 'lcc_m2v_results\\model', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 120, '_session_config': allow_soft_placement: true
+graph_options {
+  rewrite_options {
+    meta_optimizer_iterations: ONE
+  }
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x0000026B8B4A99E8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+Not using Distribute Coordinator.
+Running training and evaluation locally (non-distributed).
+Start train and evaluate loop. The evaluate will happen after every checkpoint. Checkpoint frequency is determined based on RunConfig arguments: save_checkpoints_steps None or save_checkpoints_secs 120.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\training\training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+Calling model_fn.
+
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:88: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:90: dropout (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dropout instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\layers\core.py:271: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\utilities.py:195: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\utilities.py:203: conv1d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv1D` instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\contrib\rnn\python\ops\lstm_ops.py:597: Layer.add_variable (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.add_weight` method instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:128: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\contrib\crf\python\ops\crf.py:567: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\ops\rnn.py:244: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:152: The name tf.metrics.accuracy is deprecated. Please use tf.compat.v1.metrics.accuracy instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\utilities.py:107: The name tf.diag_part is deprecated. Please use tf.linalg.tensor_diag_part instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:158: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:164: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:165: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
+
+Done calling model_fn.
+Create CheckpointSaverHook.
+Graph was finalized.
+Running local_init_op.
+Done running local_init_op.
+Saving checkpoints for 0 into lcc_m2v_results\model\model.ckpt.
+loss = 127.486244, step = 0
+global_step/sec: 2.61751
+loss = 19.21612, step = 100 (38.204 sec)
+global_step/sec: 2.83415
+loss = 16.592703, step = 200 (35.284 sec)
+global_step/sec: 3.22881
+loss = 5.982358, step = 300 (30.971 sec)
+Saving checkpoints for 338 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T12:42:21Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-338
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-12:42:30
+Saving dict for global step 338: acc = 0.966068, f1 = 0.84202594, global_step = 338, loss = 5.2424116, precision = 0.8533456, recall = 0.83100265
+Saving 'checkpoint_path' summary for global step 338: lcc_m2v_results\model\model.ckpt-338
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\summary\summary_iterator.py:68: tf_record_iterator (from tensorflow.python.lib.io.tf_record) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use eager execution and: 
+`tf.data.TFRecordDataset(path)`
+global_step/sec: 2.41036
+loss = 10.449365, step = 400 (41.488 sec)
+global_step/sec: 3.58918
+loss = 2.2896159, step = 500 (27.862 sec)
+global_step/sec: 3.42403
+loss = 3.088773, step = 600 (29.205 sec)
+global_step/sec: 3.70128
+loss = 2.6748726, step = 700 (27.018 sec)
+Saving checkpoints for 727 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T12:44:21Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-727
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-12:44:30
+Saving dict for global step 727: acc = 0.9787826, f1 = 0.9006128, global_step = 727, loss = 2.8106482, precision = 0.9048048, recall = 0.8964594
+Saving 'checkpoint_path' summary for global step 727: lcc_m2v_results\model\model.ckpt-727
+global_step/sec: 2.74536
+loss = 1.4087112, step = 800 (36.425 sec)
+global_step/sec: 3.61758
+loss = 3.1825986, step = 900 (27.643 sec)
+global_step/sec: 4.54833
+loss = 3.9872086, step = 1000 (21.986 sec)
+global_step/sec: 3.90214
+loss = 3.2667174, step = 1100 (25.627 sec)
+Saving checkpoints for 1160 into lcc_m2v_results\model\model.ckpt.
+Skip the current checkpoint eval due to throttle secs (120 secs).
+global_step/sec: 4.21853
+loss = 1.9636233, step = 1200 (23.721 sec)
+global_step/sec: 4.11809
+loss = 1.6904776, step = 1300 (24.267 sec)
+global_step/sec: 4.26066
+loss = 1.3386333, step = 1400 (23.471 sec)
+global_step/sec: 4.58089
+loss = 1.5786673, step = 1500 (21.830 sec)
+global_step/sec: 4.19365
+loss = 3.9391408, step = 1600 (23.846 sec)
+Saving checkpoints for 1680 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T12:48:21Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-1680
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-12:48:29
+Saving dict for global step 1680: acc = 0.98653054, f1 = 0.93843645, global_step = 1680, loss = 1.9423665, precision = 0.9357988, recall = 0.941089
+Saving 'checkpoint_path' summary for global step 1680: lcc_m2v_results\model\model.ckpt-1680
+global_step/sec: 3.10955
+loss = 3.3963783, step = 1700 (32.159 sec)
+global_step/sec: 4.54833
+loss = 2.447261, step = 1800 (21.986 sec)
+global_step/sec: 4.69172
+loss = 1.0644562, step = 1900 (21.314 sec)
+global_step/sec: 4.73687
+loss = 1.4267546, step = 2000 (21.111 sec)
+global_step/sec: 4.68485
+loss = 0.97070426, step = 2100 (21.345 sec)
+Saving checkpoints for 2198 into lcc_m2v_results\model\model.ckpt.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\training\saver.py:963: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T12:50:22Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2198
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-12:50:30
+Saving dict for global step 2198: acc = 0.9879212, f1 = 0.9446834, global_step = 2198, loss = 1.7678031, precision = 0.94175047, recall = 0.94763464
+Saving 'checkpoint_path' summary for global step 2198: lcc_m2v_results\model\model.ckpt-2198
+global_step/sec: 3.30724
+loss = 0.98885804, step = 2200 (30.315 sec)
+global_step/sec: 4.86329
+loss = 2.2035975, step = 2300 (20.484 sec)
+global_step/sec: 4.28061
+loss = 0.9426216, step = 2400 (23.377 sec)
+global_step/sec: 5.25411
+loss = 2.0875182, step = 2500 (19.017 sec)
+global_step/sec: 5.3152
+loss = 1.1860509, step = 2600 (18.814 sec)
+global_step/sec: 4.96086
+loss = 0.33540735, step = 2700 (20.158 sec)
+Saving checkpoints for 2740 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T12:52:22Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2740
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-12:52:30
+Saving dict for global step 2740: acc = 0.98839796, f1 = 0.9464497, global_step = 2740, loss = 1.6983736, precision = 0.9411592, recall = 0.95180005
+Saving 'checkpoint_path' summary for global step 2740: lcc_m2v_results\model\model.ckpt-2740
+global_step/sec: 3.30382
+loss = 1.9369465, step = 2800 (30.268 sec)
+global_step/sec: 5.25411
+loss = 0.20364723, step = 2900 (19.048 sec)
+Saving checkpoints for 2918 into lcc_m2v_results\model\model.ckpt.
+Skip the current checkpoint eval due to throttle secs (120 secs).
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T12:53:06Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2918
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-12:53:14
+Saving dict for global step 2918: acc = 0.9886364, f1 = 0.9477105, global_step = 2918, loss = 1.685332, precision = 0.9410384, recall = 0.95447785
+Saving 'checkpoint_path' summary for global step 2918: lcc_m2v_results\model\model.ckpt-2918
+Loss for final step: 0.7516289.
+Calling model_fn.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:135: to_int64 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+Done calling model_fn.
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2918
+Running local_init_op.
+Done running local_init_op.
+Calling model_fn.
+Done calling model_fn.
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2918
+Running local_init_op.
+Done running local_init_op.
+Using config: {'_model_dir': 'lcc_m2v_results\\model', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 120, '_session_config': allow_soft_placement: true
+graph_options {
+  rewrite_options {
+    meta_optimizer_iterations: ONE
+  }
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x00000189EFCE99E8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+Not using Distribute Coordinator.
+Running training and evaluation locally (non-distributed).
+Start train and evaluate loop. The evaluate will happen after every checkpoint. Checkpoint frequency is determined based on RunConfig arguments: save_checkpoints_steps None or save_checkpoints_secs 120.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\training\training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+Calling model_fn.
+
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:88: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:90: dropout (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dropout instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\layers\core.py:271: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\utilities.py:195: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\utilities.py:203: conv1d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv1D` instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\contrib\rnn\python\ops\lstm_ops.py:597: Layer.add_variable (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.add_weight` method instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:128: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\contrib\crf\python\ops\crf.py:567: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\ops\rnn.py:244: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:152: The name tf.metrics.accuracy is deprecated. Please use tf.compat.v1.metrics.accuracy instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\utilities.py:107: The name tf.diag_part is deprecated. Please use tf.linalg.tensor_diag_part instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:158: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:164: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:165: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
+
+Done calling model_fn.
+Create CheckpointSaverHook.
+Graph was finalized.
+Running local_init_op.
+Done running local_init_op.
+Saving checkpoints for 0 into lcc_m2v_results\model\model.ckpt.
+loss = 140.67653, step = 0
+global_step/sec: 2.67874
+loss = 18.684189, step = 100 (37.331 sec)
+global_step/sec: 2.77998
+loss = 9.549149, step = 200 (35.972 sec)
+global_step/sec: 3.11109
+loss = 2.4183679, step = 300 (32.143 sec)
+Saving checkpoints for 336 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T14:24:40Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-336
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-14:24:49
+Saving dict for global step 336: acc = 0.96729976, f1 = 0.8420722, global_step = 336, loss = 5.4227347, precision = 0.891326, recall = 0.7979768
+Saving 'checkpoint_path' summary for global step 336: lcc_m2v_results\model\model.ckpt-336
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\summary\summary_iterator.py:68: tf_record_iterator (from tensorflow.python.lib.io.tf_record) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use eager execution and: 
+`tf.data.TFRecordDataset(path)`
+global_step/sec: 2.4342
+loss = 7.584459, step = 400 (41.081 sec)
+global_step/sec: 3.86911
+loss = 2.719411, step = 500 (25.846 sec)
+global_step/sec: 3.6135
+loss = 4.0149064, step = 600 (27.674 sec)
+global_step/sec: 3.63196
+loss = 2.5475886, step = 700 (27.533 sec)
+Saving checkpoints for 734 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T14:26:40Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-734
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-14:26:49
+Saving dict for global step 734: acc = 0.976637, f1 = 0.89438987, global_step = 734, loss = 3.3681996, precision = 0.88084245, recall = 0.9083606
+Saving 'checkpoint_path' summary for global step 734: lcc_m2v_results\model\model.ckpt-734
+global_step/sec: 2.83792
+loss = 3.8308797, step = 800 (35.237 sec)
+global_step/sec: 4.11809
+loss = 0.45842856, step = 900 (24.283 sec)
+global_step/sec: 4.20191
+loss = 2.5360093, step = 1000 (23.799 sec)
+global_step/sec: 4.29209
+loss = 1.4372174, step = 1100 (23.299 sec)
+Saving checkpoints for 1197 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T14:28:40Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-1197
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-14:28:49
+Saving dict for global step 1197: acc = 0.9817625, f1 = 0.9184122, global_step = 1197, loss = 2.4988158, precision = 0.90450084, recall = 0.9327581
+Saving 'checkpoint_path' summary for global step 1197: lcc_m2v_results\model\model.ckpt-1197
+global_step/sec: 3.07225
+loss = 4.6332335, step = 1200 (32.549 sec)
+global_step/sec: 4.52262
+loss = 3.1631713, step = 1300 (22.111 sec)
+global_step/sec: 4.49088
+loss = 1.57565, step = 1400 (22.267 sec)
+global_step/sec: 4.80083
+loss = 4.1716337, step = 1500 (20.830 sec)
+global_step/sec: 4.52902
+loss = 0.49656782, step = 1600 (22.080 sec)
+global_step/sec: 4.758
+loss = 0.9641665, step = 1700 (21.017 sec)
+Saving checkpoints for 1708 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T14:30:41Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-1708
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-14:30:49
+Saving dict for global step 1708: acc = 0.98728544, f1 = 0.9418381, global_step = 1708, loss = 1.9842179, precision = 0.93698466, recall = 0.94674206
+Saving 'checkpoint_path' summary for global step 1708: lcc_m2v_results\model\model.ckpt-1708
+global_step/sec: 3.29722
+loss = 3.1184316, step = 1800 (30.329 sec)
+global_step/sec: 4.71592
+loss = 1.7122186, step = 1900 (21.205 sec)
+global_step/sec: 4.82982
+loss = 2.0465329, step = 2000 (20.705 sec)
+global_step/sec: 4.87396
+loss = 3.2676213, step = 2100 (20.517 sec)
+global_step/sec: 4.93789
+loss = 0.8708643, step = 2200 (20.252 sec)
+Saving checkpoints for 2240 into lcc_m2v_results\model\model.ckpt.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\training\saver.py:963: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T14:32:41Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2240
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-14:32:49
+Saving dict for global step 2240: acc = 0.98780197, f1 = 0.94519126, global_step = 2240, loss = 1.935497, precision = 0.93867373, recall = 0.95180005
+Saving 'checkpoint_path' summary for global step 2240: lcc_m2v_results\model\model.ckpt-2240
+global_step/sec: 3.22069
+loss = 1.9752891, step = 2300 (31.049 sec)
+global_step/sec: 4.93789
+loss = 1.8384838, step = 2400 (20.252 sec)
+global_step/sec: 4.98792
+loss = 1.2477562, step = 2500 (20.048 sec)
+global_step/sec: 5.13192
+loss = 1.7026612, step = 2600 (19.486 sec)
+global_step/sec: 4.99181
+loss = 0.10339527, step = 2700 (20.033 sec)
+Saving checkpoints for 2789 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T14:34:41Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2789
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-14:34:49
+Saving dict for global step 2789: acc = 0.98835826, f1 = 0.94626516, global_step = 2789, loss = 1.761469, precision = 0.9390566, recall = 0.95358527
+Saving 'checkpoint_path' summary for global step 2789: lcc_m2v_results\model\model.ckpt-2789
+global_step/sec: 3.38419
+loss = 2.8717093, step = 2800 (29.549 sec)
+global_step/sec: 5.37322
+loss = 0.5071659, step = 2900 (18.611 sec)
+Saving checkpoints for 2918 into lcc_m2v_results\model\model.ckpt.
+Skip the current checkpoint eval due to throttle secs (120 secs).
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T14:35:15Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2918
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-14:35:23
+Saving dict for global step 2918: acc = 0.9885966, f1 = 0.94814605, global_step = 2918, loss = 1.8022321, precision = 0.94160795, recall = 0.9547754
+Saving 'checkpoint_path' summary for global step 2918: lcc_m2v_results\model\model.ckpt-2918
+Loss for final step: 1.1319773.
+Calling model_fn.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:135: to_int64 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+Done calling model_fn.
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2918
+Running local_init_op.
+Done running local_init_op.
+Calling model_fn.
+Done calling model_fn.
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2918
+Running local_init_op.
+Done running local_init_op.
+Using config: {'_model_dir': 'lcc_m2v_results\\model', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 120, '_session_config': allow_soft_placement: true
+graph_options {
+  rewrite_options {
+    meta_optimizer_iterations: ONE
+  }
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x0000025696488A58>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+Not using Distribute Coordinator.
+Running training and evaluation locally (non-distributed).
+Start train and evaluate loop. The evaluate will happen after every checkpoint. Checkpoint frequency is determined based on RunConfig arguments: save_checkpoints_steps None or save_checkpoints_secs 120.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\training\training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+Calling model_fn.
+
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:88: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:90: dropout (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dropout instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\layers\core.py:271: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\utilities.py:195: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\utilities.py:203: conv1d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv1D` instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\contrib\rnn\python\ops\lstm_ops.py:597: Layer.add_variable (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.add_weight` method instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:128: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\contrib\crf\python\ops\crf.py:567: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\ops\rnn.py:244: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:152: The name tf.metrics.accuracy is deprecated. Please use tf.compat.v1.metrics.accuracy instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\utilities.py:107: The name tf.diag_part is deprecated. Please use tf.linalg.tensor_diag_part instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:158: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:164: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:165: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
+
+Done calling model_fn.
+Create CheckpointSaverHook.
+Graph was finalized.
+Running local_init_op.
+Done running local_init_op.
+Saving checkpoints for 0 into lcc_m2v_results\model\model.ckpt.
+loss = 98.75431, step = 0
+global_step/sec: 2.55367
+loss = 13.760071, step = 100 (39.159 sec)
+global_step/sec: 2.96685
+loss = 14.916034, step = 200 (33.706 sec)
+global_step/sec: 3.04593
+loss = 5.02867, step = 300 (32.831 sec)
+Saving checkpoints for 332 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T16:07:41Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-332
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-16:07:50
+Saving dict for global step 332: acc = 0.96817386, f1 = 0.849868, global_step = 332, loss = 5.2257786, precision = 0.88863635, recall = 0.81434095
+Saving 'checkpoint_path' summary for global step 332: lcc_m2v_results\model\model.ckpt-332
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\summary\summary_iterator.py:68: tf_record_iterator (from tensorflow.python.lib.io.tf_record) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use eager execution and: 
+`tf.data.TFRecordDataset(path)`
+global_step/sec: 2.44163
+loss = 7.0463114, step = 400 (40.956 sec)
+global_step/sec: 3.31066
+loss = 2.5870328, step = 500 (30.205 sec)
+global_step/sec: 3.52008
+loss = 4.2053127, step = 600 (28.408 sec)
+global_step/sec: 3.82288
+loss = 2.344036, step = 700 (26.158 sec)
+Saving checkpoints for 724 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T16:09:41Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-724
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-16:09:49
+Saving dict for global step 724: acc = 0.9777495, f1 = 0.8950276, global_step = 724, loss = 3.0422559, precision = 0.8983813, recall = 0.8916989
+Saving 'checkpoint_path' summary for global step 724: lcc_m2v_results\model\model.ckpt-724
+global_step/sec: 2.85817
+loss = 3.4487987, step = 800 (34.987 sec)
+global_step/sec: 3.96992
+loss = 7.7755814, step = 900 (25.189 sec)
+global_step/sec: 4.29821
+loss = 2.9755912, step = 1000 (23.265 sec)
+global_step/sec: 3.93332
+loss = 2.6448865, step = 1100 (25.424 sec)
+Saving checkpoints for 1169 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T16:11:41Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-1169
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-16:11:50
+Saving dict for global step 1169: acc = 0.98466307, f1 = 0.9291784, global_step = 1169, loss = 2.2158813, precision = 0.9312612, recall = 0.927105
+Saving 'checkpoint_path' summary for global step 1169: lcc_m2v_results\model\model.ckpt-1169
+global_step/sec: 3.01437
+loss = 7.467191, step = 1200 (33.174 sec)
+global_step/sec: 4.25216
+loss = 0.7025307, step = 1300 (23.517 sec)
+global_step/sec: 4.47205
+loss = 0.80362874, step = 1400 (22.361 sec)
+global_step/sec: 4.47831
+loss = 5.000255, step = 1500 (22.330 sec)
+global_step/sec: 4.46581
+loss = 3.2088838, step = 1600 (22.392 sec)
+Saving checkpoints for 1660 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T16:13:42Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-1660
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-16:13:50
+Saving dict for global step 1660: acc = 0.98684835, f1 = 0.9407769, global_step = 1660, loss = 2.0382495, precision = 0.9340176, recall = 0.94763464
+Saving 'checkpoint_path' summary for global step 1660: lcc_m2v_results\model\model.ckpt-1660
+global_step/sec: 3.17909
+loss = 2.9423885, step = 1700 (31.456 sec)
+global_step/sec: 4.46893
+loss = 2.7305458, step = 1800 (22.377 sec)
+global_step/sec: 4.59405
+loss = 1.6415348, step = 1900 (21.767 sec)
+global_step/sec: 4.62058
+loss = 2.3611379, step = 2000 (21.642 sec)
+global_step/sec: 4.62058
+loss = 2.9253497, step = 2100 (21.642 sec)
+Saving checkpoints for 2175 into lcc_m2v_results\model\model.ckpt.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\training\saver.py:963: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T16:15:42Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2175
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-16:15:50
+Saving dict for global step 2175: acc = 0.9876033, f1 = 0.9432172, global_step = 2175, loss = 1.8163162, precision = 0.9400118, recall = 0.9464445
+Saving 'checkpoint_path' summary for global step 2175: lcc_m2v_results\model\model.ckpt-2175
+global_step/sec: 3.36461
+loss = 1.7410786, step = 2200 (29.721 sec)
+global_step/sec: 4.88885
+loss = 1.2253265, step = 2300 (20.455 sec)
+global_step/sec: 4.62726
+loss = 0.53303546, step = 2400 (21.611 sec)
+global_step/sec: 4.76154
+loss = 0.48389673, step = 2500 (21.002 sec)
+global_step/sec: 4.96086
+loss = 1.0495331, step = 2600 (20.173 sec)
+global_step/sec: 4.88139
+loss = 1.4073864, step = 2700 (20.470 sec)
+Saving checkpoints for 2704 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T16:17:42Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2704
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-16:17:50
+Saving dict for global step 2704: acc = 0.98728544, f1 = 0.94235003, global_step = 2704, loss = 1.8450838, precision = 0.9293981, recall = 0.955668
+Saving 'checkpoint_path' summary for global step 2704: lcc_m2v_results\model\model.ckpt-2704
+global_step/sec: 3.3824
+loss = 0.4609375, step = 2800 (29.565 sec)
+global_step/sec: 4.78647
+loss = 1.0255661, step = 2900 (20.892 sec)
+Saving checkpoints for 2918 into lcc_m2v_results\model\model.ckpt.
+Skip the current checkpoint eval due to throttle secs (120 secs).
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T16:18:35Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2918
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-16:18:44
+Saving dict for global step 2918: acc = 0.98883504, f1 = 0.94873685, global_step = 2918, loss = 1.730871, precision = 0.9421948, recall = 0.9553704
+Saving 'checkpoint_path' summary for global step 2918: lcc_m2v_results\model\model.ckpt-2918
+Loss for final step: 0.23850746.
+Calling model_fn.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:135: to_int64 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+Done calling model_fn.
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2918
+Running local_init_op.
+Done running local_init_op.
+Calling model_fn.
+Done calling model_fn.
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2918
+Running local_init_op.
+Done running local_init_op.
+Using config: {'_model_dir': 'lcc_m2v_results\\model', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 120, '_session_config': allow_soft_placement: true
+graph_options {
+  rewrite_options {
+    meta_optimizer_iterations: ONE
+  }
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x00000149B3A08A20>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+Not using Distribute Coordinator.
+Running training and evaluation locally (non-distributed).
+Start train and evaluate loop. The evaluate will happen after every checkpoint. Checkpoint frequency is determined based on RunConfig arguments: save_checkpoints_steps None or save_checkpoints_secs 120.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\training\training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+Calling model_fn.
+
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:88: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:90: dropout (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dropout instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\layers\core.py:271: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\utilities.py:195: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\utilities.py:203: conv1d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv1D` instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\contrib\rnn\python\ops\lstm_ops.py:597: Layer.add_variable (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.add_weight` method instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:128: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\contrib\crf\python\ops\crf.py:567: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\ops\rnn.py:244: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:152: The name tf.metrics.accuracy is deprecated. Please use tf.compat.v1.metrics.accuracy instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\utilities.py:107: The name tf.diag_part is deprecated. Please use tf.linalg.tensor_diag_part instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:158: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:164: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:165: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
+
+Done calling model_fn.
+Create CheckpointSaverHook.
+Graph was finalized.
+Running local_init_op.
+Done running local_init_op.
+Saving checkpoints for 0 into lcc_m2v_results\model\model.ckpt.
+loss = 103.025, step = 0
+global_step/sec: 2.6554
+loss = 14.535791, step = 100 (37.659 sec)
+global_step/sec: 2.9275
+loss = 24.91265, step = 200 (34.159 sec)
+global_step/sec: 3.03294
+loss = 9.860842, step = 300 (32.971 sec)
+Saving checkpoints for 339 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T17:50:37Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-339
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-17:50:46
+Saving dict for global step 339: acc = 0.96622694, f1 = 0.83818823, global_step = 339, loss = 5.591768, precision = 0.8598248, recall = 0.8176138
+Saving 'checkpoint_path' summary for global step 339: lcc_m2v_results\model\model.ckpt-339
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\summary\summary_iterator.py:68: tf_record_iterator (from tensorflow.python.lib.io.tf_record) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use eager execution and: 
+`tf.data.TFRecordDataset(path)`
+global_step/sec: 2.42325
+loss = 7.8832526, step = 400 (41.267 sec)
+global_step/sec: 3.25675
+loss = 6.2752075, step = 500 (30.705 sec)
+global_step/sec: 4.00219
+loss = 5.4322715, step = 600 (24.986 sec)
+global_step/sec: 3.65269
+loss = 3.219495, step = 700 (27.377 sec)
+Saving checkpoints for 731 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T17:52:37Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-731
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-17:52:46
+Saving dict for global step 731: acc = 0.97945803, f1 = 0.90205485, global_step = 731, loss = 2.9149537, precision = 0.90955836, recall = 0.8946742
+Saving 'checkpoint_path' summary for global step 731: lcc_m2v_results\model\model.ckpt-731
+global_step/sec: 2.74421
+loss = 6.2469187, step = 800 (36.456 sec)
+global_step/sec: 3.97732
+loss = 2.5996487, step = 900 (25.127 sec)
+global_step/sec: 4.06576
+loss = 2.0510516, step = 1000 (24.596 sec)
+global_step/sec: 4.23528
+loss = 4.728962, step = 1100 (23.611 sec)
+Saving checkpoints for 1178 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T17:54:38Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-1178
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-17:54:46
+Saving dict for global step 1178: acc = 0.9830738, f1 = 0.9233464, global_step = 1178, loss = 2.4776204, precision = 0.9065367, recall = 0.9407914
+Saving 'checkpoint_path' summary for global step 1178: lcc_m2v_results\model\model.ckpt-1178
+global_step/sec: 3.00729
+loss = 2.8146386, step = 1200 (33.253 sec)
+global_step/sec: 4.40434
+loss = 2.460022, step = 1300 (22.705 sec)
+global_step/sec: 4.45959
+loss = 4.312749, step = 1400 (22.424 sec)
+global_step/sec: 4.67117
+loss = 1.6853008, step = 1500 (21.408 sec)
+global_step/sec: 4.14208
+loss = 2.358828, step = 1600 (24.142 sec)
+Saving checkpoints for 1670 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T17:56:38Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-1670
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-17:56:46
+Saving dict for global step 1670: acc = 0.9860537, f1 = 0.93571746, global_step = 1670, loss = 2.008879, precision = 0.9295361, recall = 0.94198155
+Saving 'checkpoint_path' summary for global step 1670: lcc_m2v_results\model\model.ckpt-1670
+global_step/sec: 3.39677
+loss = 1.2132466, step = 1700 (29.440 sec)
+global_step/sec: 4.60065
+loss = 2.0531604, step = 1800 (21.736 sec)
+global_step/sec: 4.96086
+loss = 2.238665, step = 1900 (20.158 sec)
+global_step/sec: 4.76154
+loss = 1.8616155, step = 2000 (21.002 sec)
+global_step/sec: 4.4627
+loss = 1.0030205, step = 2100 (22.408 sec)
+Saving checkpoints for 2194 into lcc_m2v_results\model\model.ckpt.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\venv\lib\site-packages\tensorflow_core\python\training\saver.py:963: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T17:58:38Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2194
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-17:58:46
+Saving dict for global step 2194: acc = 0.9871265, f1 = 0.9417833, global_step = 2194, loss = 1.8606111, precision = 0.9331192, recall = 0.9506099
+Saving 'checkpoint_path' summary for global step 2194: lcc_m2v_results\model\model.ckpt-2194
+global_step/sec: 3.30042
+loss = 1.4911916, step = 2200 (30.377 sec)
+global_step/sec: 4.78289
+loss = 2.292375, step = 2300 (20.830 sec)
+global_step/sec: 4.69516
+loss = 2.6370625, step = 2400 (21.299 sec)
+global_step/sec: 5.2498
+loss = 0.9456583, step = 2500 (19.048 sec)
+global_step/sec: 4.97242
+loss = 1.9154632, step = 2600 (20.111 sec)
+global_step/sec: 5.10735
+loss = 1.2740409, step = 2700 (19.580 sec)
+Saving checkpoints for 2736 into lcc_m2v_results\model\model.ckpt.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T18:00:38Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2736
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-18:00:46
+Saving dict for global step 2736: acc = 0.9886364, f1 = 0.9483623, global_step = 2736, loss = 1.7319447, precision = 0.94059116, recall = 0.956263
+Saving 'checkpoint_path' summary for global step 2736: lcc_m2v_results\model\model.ckpt-2736
+global_step/sec: 3.25529
+loss = 2.009603, step = 2800 (30.719 sec)
+global_step/sec: 5.0629
+loss = 1.2629235, step = 2900 (19.752 sec)
+Saving checkpoints for 2918 into lcc_m2v_results\model\model.ckpt.
+Skip the current checkpoint eval due to throttle secs (120 secs).
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2021-11-17T18:01:24Z
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2918
+Running local_init_op.
+Done running local_init_op.
+Evaluation [10/100]
+Evaluation [20/100]
+Evaluation [30/100]
+Finished evaluation at 2021-11-17-18:01:33
+Saving dict for global step 2918: acc = 0.98756355, f1 = 0.9433795, global_step = 2918, loss = 1.7581447, precision = 0.9351067, recall = 0.95180005
+Saving 'checkpoint_path' summary for global step 2918: lcc_m2v_results\model\model.ckpt-2918
+Loss for final step: 3.1170917.
+Calling model_fn.
+From C:\Users\berka\Desktop\LegalNER\LEGAL_NER\src\LSTM_CNN_CRF.py:135: to_int64 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+Done calling model_fn.
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2918
+Running local_init_op.
+Done running local_init_op.
+Calling model_fn.
+Done calling model_fn.
+Graph was finalized.
+Restoring parameters from lcc_m2v_results\model\model.ckpt-2918
+Running local_init_op.
+Done running local_init_op.
