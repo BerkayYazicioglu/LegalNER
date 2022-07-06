@@ -12,6 +12,8 @@ word / tag separated by space using IOBES tagging scheme.
 
 ## Get Started
 
+Tensorflow 1.15 should be used, other versions are untested. Remaining packages should be operational wihout a specified version.
+
 Once produced all the required data files, use the `main.py` with specifying correct parameters. These are:
 
 1. __model (-m):__ Three base architectures; `lc`for LSTM-CRF, `llc` for LSTM-LSTM-CRF and `lcc` for LSTM-CRF-CRF.
